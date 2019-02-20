@@ -14,14 +14,18 @@
 	background-color : white;
 	background-position: center center;
 }
-
+#top_1{
+	padding-left: 20px;
+}
+#top_2{
+	padding-left: 20px;
+}
 #product_moisture{
 	line-height: 1em;
 	font-size: 1em;
 	text-align: right;
 	width: 40px;
 	height: 150px;
-	background-color: blue;
 }
 #product_moisture0{
 	line-height: 1em;
@@ -103,7 +107,23 @@
 	margin-bottom: 20px;
 	text-align: center;
 }
-
+#change_button{
+	background-color:#05C9FB;
+}
+#change_button:hover{
+	background-color:#76E1F9;
+	color: #373839;
+	transition: background-color, 0.5s;
+}
+#delete_button{
+	margin-left: -30px;
+	background-color : #373839;
+}
+#delete_button:hover{
+	background-color: #D1D5D7;
+	color: #373839;
+	transition: background-color, 0.5s;
+}
 table {
 	border : 1px solid #EEE;
 	float: left;
@@ -111,7 +131,6 @@ table {
 	margin: 10px 15px;
 	width: 150px;
 	padding-bottom : 8px;
-	
 }
 
 tr {
@@ -121,17 +140,11 @@ tr {
 
 button {
 	display : block;
-	width : 70px;
+	width : 100px;
 	height : 3em;
-	background-color : #373839;
 	color : white;
 	border : none;
 	cursor : pointer;
-}
-
-button:hover {
-	background-color : #575859;
-	transition : background-color, 0.5s;
 }
 
 #footer{
