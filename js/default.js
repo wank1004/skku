@@ -12,7 +12,6 @@ items[0] = [];
 	items[0][6] = "22";						//분
 	items[0][7] = "img/pot1.jpg";			//이미지
 	items[0][8] = false;					//변경 확인용
-	items[0][9] = "";
 
 items[1] = [];
 	items[1][0] = "화분 2";

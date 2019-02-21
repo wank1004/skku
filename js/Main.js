@@ -102,5 +102,5 @@ function set_change(i){
 	var itmes_db = JSON.parse(localStorage.getItem("items"));
 	items_db[i][8] = true;
 	localStorage.setItem("items", JSON.stringify(items_db));
-	window.location.href = "Change item.html";
+	window.location.href = "Change_item.html";
 }
