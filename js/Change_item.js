@@ -10,40 +10,37 @@ for(var i=0; i<items_db.length; i++){
 }
 
 if(cnt==-1){
-	window.location.replace("Main.html");
+	window.parent.location.replace("Main.html");
 	alert("잘못된 조작입니다.");
 }
+/*if(!items_db[cnt][9]){
+	window.parent.location.replace("Main.html");
+	alert("비정상적인 접속입니다.");
+}*/
 var new_name = document.getElementById("product_name");
-var new_date = document.getElementById("watering_date");
-var new_time = document.getElementById("watering_time");
+var start = document.getElementById("start_moisture");
+var end = document.getElementById("end_moisture");
 new_name.placeholder = items_db[cnt][0];
+start.placeholder = itmes_db[cnt][10];
+end.placceholder = items_db[cnt][11];
 
 
 function save_change(){
-	var set_date = new_date.value.split("-");
-	var set_time = new_time.value.split(":");
-	var set_name = new_name.value;
-	if(set_name!=""){
-		items_db[cnt][0] = set_name;
-	}
-	if(set_date[0]!=""){
-		items_db[cnt][2] = set_date[0];
-		items_db[cnt][3] = set_date[1];
-		items_db[cnt][4] = set_date[2];
-	}
-	if(set_time[0]!=""){
-		items_db[cnt][5] = set_time[0];
-		items_db[cnt][6] = set_time[1];
-	}
-	
+	if(new_name.value != "")
+		items_db[cnt][0] = new_name.value;
+	if(start.value != "")
+		items_db[cnt][10] = start.value;
+	if(end.value != "")
+		items_db[cnt][11] = end.value;
 	items_db[cnt][8]=false;
+	items_db[cnt][9]=true;
 	localStorage.setItem("items", JSON.stringify(items_db));
-	window.location.replace("Main.html");
+	window.parent.location.replace("Main.html");
 	alert("변경 성공!");
 }
 		
 function cancel_change(){
 	items_db[cnt][8] = false;
-	window.location.replace("Main.html");
+	window.parent.location.replace("Main.html");
 	alert("변경을 취소하셨습니다.");
 }

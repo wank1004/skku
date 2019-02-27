@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+#header {
+	background-image: url(../img/back.jpg);
+	height: 300px;
+	width: 100%;
+	text-align: center;
+	margin-top : 0px;
+	background-color : white;
+	background-position: center center;
+}
+
+#buttons{
+	margin-top: 10px;
+	left: 50%;
+	text-align: center;
+	
+}
+#buttons li{
+	list-style-position: inside;
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+	transform: translateX(-50%);
+	margin-left: 5%;
+	background-color: #05C9FB;
+	border-radius: 10px;
+}
+
+a{
+	font-size: 30px;
+	text-decoration: none;
+	color: #fefefe;
+}
+a:hover{
+	border: 1px solid #05C9FB;
+	border-radius: 10px;
+	color: #05C9FB;
+	background-color: #fefefe;
+	transition: background-color 0.5s, color 0.5s;
+}
+article{
+	bottom:20%;
+	margin-bottom: 100%;
+	position: relative;
+	display:block;
+	margin: 30px 1 10 0px;
+	width: 100%;
+}
+	
+#footer{
+	display: block;
+	position: relative;
+	bottom:20%;
+	margin-top: 0;
+	margin-left: 30px;
+	text-align:center;
+	width: 100%;
+	background-color: white;
+}
+
+body{
+	margin: 0% 0 0 0.5%;
+	width: 100%;
+	height: 100%
+}
+
+

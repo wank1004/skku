@@ -7,9 +7,6 @@
 
 </head>
 <body>
-	
-	<div id="header"></div>
-	
     <form>    
       	<fieldset>
 				<legend>화분 정보</legend>
@@ -17,15 +14,15 @@
 				<div id="left">
 				<p>화분명&nbsp;</p>
 				<p>화분 사진&nbsp;</p>
-				<p>급수 날짜&nbsp;</p>
-				<p>급수 시간&nbsp;</p>
+				<p>시작 습도&nbsp;</p>
+				<p>종료 습도&nbsp;</p>
 				</div>
 				
 				<div id="right">				
-				<p><strong><input type = "text" id = "product_name" placeholder="" /></strong></p>
+				<p><strong><input type = "text" id = "product_name" placeholder="화분의 이름을 입력해주세요" /></strong></p>
 				<p><strong><input type = "file" id = "product_image"/></strong></p>
-				<p><strong><input type = "date" id = "watering_date" min = "2019-01-01"/></strong></p>
-				<p><strong><input type = "time" id = "watering_time"/></strong></p>
+				<p><strong><input type = "number" id = "start_moisture" placeholder = "급수를 시작할 습도를 입력해주세요" min = "0" max = "100"/></strong></p>
+				<p><strong><input type = "number" id = "end_moisture" placeholder = "급수를 종료할 습도를 입력해주세요" min = "0" max = "100"/></strong></p>
 				</div>
 		</fieldset>
 		

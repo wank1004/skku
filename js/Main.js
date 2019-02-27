@@ -70,9 +70,12 @@ function loadInfo() {
 		var td03 = document.createElement("td");			//시간
 		td03.setAttribute("colspan", "2");
 		tr03.appendChild(td03);
-
-		td03.innerHTML = '<p id="product_time">' + items_db[i][2] +'년 '+ items_db[i][3]+'월 ' + items_db[i][4] +'일 ' + items_db[i][5] + '시 ' + items_db[i][6] +'분 </p>';
-
+		
+		if(items_db[i][9])
+			td03.innerHTML = '<p id ="product_time">' + '급수 시작 습도: ' + items_db[i][10] + '% </p>'+'<p id = "product_time"> 급수 종료 습도: ' + items_db[i][11] + '% </p>';
+		else
+			td03.innerHTML = '<p id="product_time">' + items_db[i][2] +'년 '+ items_db[i][3]+'월 ' + items_db[i][4] +'일 ' + items_db[i][5] + '시 ' + items_db[i][6] +'분 </p>'+'<p id = "product_time"> 급수량: ' + items_db[i][12] + 'ml </p>';
+		
 		var tr04 = document.createElement("tr");				
 		document.getElementById("item_"+i).appendChild(tr04);
 			
@@ -102,5 +105,5 @@ function set_change(i){
 	var itmes_db = JSON.parse(localStorage.getItem("items"));
 	items_db[i][8] = true;
 	localStorage.setItem("items", JSON.stringify(items_db));
-	window.location.href = "Change_item.html";
+	window.location.href = "frame_change.html";
 }

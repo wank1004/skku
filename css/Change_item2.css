@@ -5,7 +5,7 @@ fieldset{
     top : 50px;
     left: 50%;
     transform : translateX(-50%);
-    height: 270px;
+    height: 300px;
 }
 
 #left{
@@ -29,27 +29,16 @@ fieldset{
 p{
 	height: 25px;
 }
-#product_name{
-	width: 225px;
-	text-align: center;
-}
-#start_moisture{
-	width: 225px;
-	text-align: center;
-}
-#end_moisture{
-	width: 225px;
-	text-align: center;
-}
 #center{
 	display:block;
 	margin: 30px 0 0 0;
 	position: absolute;
-	top: 350px;
+	top: 400px;
     left: 50%;
     transform : translateX(-50%);
 	text-align:center;
 }
+
 .button {
 	width : 150px;
 	height : 3em;
