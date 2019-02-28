@@ -77,6 +77,4 @@ items[4] = [];
 	items[4][11] = "day";
 	items[4][12] = "500";
 
-
-
 localStorage.setItem("items", JSON.stringify(items));
