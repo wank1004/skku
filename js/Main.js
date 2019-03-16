@@ -3,7 +3,8 @@ var items_db = JSON.parse(localStorage.getItem("items"));
 
 function loadInfo() {
 	for (var i =0; i < items_db.length; i++){
-			
+		if(items_db[i][8])
+			items_db[i][8] = false;
 		var moisture = items_db[i][1];
 		moisture = parseInt(moisture/20);
 				
