@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>화분 추가</title>
+<link rel="stylesheet" type="text/css" href="css/add_item2.css">
+</head>
+<body>
+    <form enctype = "multipart/form-data" action = "add2.php" method = "post">    
+      	<fieldset>
+				<legend>화분 정보</legend>
+				
+				<div id="left">
+				<p>화분명&nbsp;</p>
+				<p>화분 사진&nbsp;</p>
+				<p>급수 기준 날짜&nbsp;</p>
+				<p>급수 시간&nbsp;</p>
+				<p>급수 주기&nbsp;</p>
+				<p>급수량 (단위: ml)&nbsp;</p>
+				</div>
+				
+				<div id="right">				
+				<p><strong><input type = "text" name = "product_name" id = "product_name" placeholder="화분의 이름을 입력해주세요" /></strong></p>
+				<p><strong><input type = "file" name = "product_image" id = "product_image"/></strong></p>
+				<p><strong><input type = "date" name = "watering_date" id = "watering_date" min = "2019-01-01" /></strong></p>
+				<p><strong><input type = "time" name = "watering_time" id = "watering_time" /></strong></p>
+				<p><strong><input type = "number" name = "watering_days" id = "watering_days" />
+				<select name = "day_type" id = "day_type" size = "1">
+					<option value = "day">일</option>
+					<option value = "week">주</option>
+					<option value = "month">달</option>
+					<option value = "year">년</option>
+				</select></strong></p>
+				<p><strong><input type = "number" name = "watering_amount" id = "watering_amount" placeholder = "화분에 줄 물의 양을 입력하세요" min = "0" /></strong></p>
+				</div>
+		</fieldset>
+		
+		<div id="center">
+		<input class="button save" type = "submit" value = "저장"/>
+		<input class="button cancel" type = "button" value = "취소" onclick = "cancel_change()"/>
+		</div>
+    </form>
+	<script type="text/javascript">
+		function cancel_change(){
+			alert("화분 추가가 취소되었습니다.");
+			window.parent.close();
+		}
+	</script>
+</body>
+</html>
